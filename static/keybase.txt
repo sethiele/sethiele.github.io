@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/sethiele
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sethiele.de
+  * I am sethiele (https://keybase.io/sethiele) on keybase.
+  * I have a public key with fingerprint A33E 5998 F8A9 FC2F 5505  297F F79B 86D7 9FC1 627E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010197782468fd90aaa9fd7bcd4bc94a49a87c542e8853bfdc01d3ecada9af7106080a",
+      "fingerprint": "a33e5998f8a9fc2f5505297ff79b86d79fc1627e",
+      "host": "keybase.io",
+      "key_id": "f79b86d79fc1627e",
+      "kid": "010197782468fd90aaa9fd7bcd4bc94a49a87c542e8853bfdc01d3ecada9af7106080a",
+      "uid": "fa4d416d0b1206c425fa23f9f60ec819",
+      "username": "sethiele"
+    },
+    "service": {
+      "hostname": "sethiele.de",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1579011714,
+  "expire_in": 157680000,
+  "prev": "be179235bb692b4dbca6f3876246f35383da97144300152c1bb0174e11ffa23a",
+  "seqno": 41,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUntMU1ccLlQnqKNgzJwKKhd1uBS870fd2DLURB7DbUGpPLr7OLe9lvZ27aWA
+RReH02FxkRAnYwRYgCCCm5mSONlDHT4IRRlgTDaEmSFCdMkesE6HdPey+c+yP3f+
+Oef8zvd9v+/35Rx9Wq+LCAt+dPBWw0VuX1jvJKcriLvu90GcLJRCJh9kB3MbKBSA
+R7HYJQEyQTACIwxF0ShO0qLAwCzLMqJAcbyAczyDszjD0hRP4CigaQLjRIGHEQED
+PCuwDCtSCEzCNMxCRkiUnFbgdrklp6LKshgGCIahRVqV41GRIGACZShRpBiOJgVK
+LSIkSgGVaJM9GkM1x7EekCzJak29WObs/Qf+f/Zd9HcfFhdwhBRgDkFhksdRQmRR
+TGREEgY8jTAa0APcTtYBVLQHKDYJFAJor1E9u70SD7RgtUn+hUgWNMsut6zIvFyo
+PtgUxeUxaUSl1KUhiwFn+UfDwklOQY1RZXiB2yPJTsiEqEhekTRRhKAYGEEoBDdC
+oMQluYFFcs6VSRpWl9YHeFVJDiAUg2JEDseRDMrhAsezpIjRFKmmJWIERmNqCqoO
+jsEwQqA8wnEwQuEAQURtbC0WD3jLKUMmHFGNslZtIsnqZJUitzr0wopwbJ4uLEIX
+90z8vKYUc80fbTMbs+dvePvJ35sfrn083cLI6CeVGJ8hlHaws5DMdOhqs4M7s6vS
+Zg3sd1YEB97TCRlQVeLN9YbNhnp4aHtg8NGDGw3RqyJ6Z/XFJZ82JXpzchIN6aff
+W/F4YLA2xbdmde3tnqV9GfcY8/KktPy8l0w9+xYPDS9oecSt1o+kbmv+5mX0F8k1
+2U2a9S7/MetTNaHRyYuph3pa7A23V9yo3nH51PBmg/H1w5ueP3HuQFcLsWvRc8Qb
+U/sfsPsXT9evHf7+RanmlbKmk+069ia619kf5/vszv3k3MTYhKNy/yf5GX1xx8vO
+dEWN2dnGHz4/Nt4ZuFf1G55rKKr0c/6mpNDjdw0TgdH6K2dmPI0O60B32kZ78Zb8
+bio/+P7hBR/225co6duSe0MrZxViwHEkdW0g69ffl37rOiGW17X/eI56rXU5ucQW
+fJjXuTvrq2tY/McpZ+tDrQWHHHlBveNC49XArqE1XzuPR197taM0Vp5KtK7LHf0i
+GGkuqP5ZmfFWjmWWwc0gut0/NtHzwtbys66ITXIHXHEkvv3A6B5Pm9dyHtXlkCfr
+pmPjr9Bc24byppj7dwXv1GTSxLPrszPTV735jtIY6tszMl1yPjxvWXOMsSVyuGvL
+qd3jHVeX/bRu4E41qBw02768ZNZX8itHL/lvXY+5HGXK2UmWtpajF/7Myn1If2AV
+784sKhsfIXdEba0biq/w+eHq1oTtfwE=
+=HGYn
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sethiele
+
+==================================================================
+

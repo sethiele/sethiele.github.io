@@ -1,0 +1,6 @@
+{{ if .Page.IsPage }}
+<div class="alert alert-warning" role="alert">
+	Bitte beachten Sie, dass dieser Artikel ein Import von meinem alten Blog ist und vom <b>{{ .Page.Date.Format .Site.Params.dateformat }}</b> Stammt.
+	Möglicherweise ist der Inhalt nicht mehr aktuell.
+</div>
+{{ end }}

@@ -1,0 +1,10 @@
+<div class="picture">
+  {{ if (or (.Get "caption") (.Get "alt") ) }}
+  <figure>
+  {{ end }}
+  	<img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" class="img-responsive">
+  {{ if (or (.Get "caption") (.Get "alt") ) }}
+    <figcaption>{{ (or (.Get "caption") (.Get "alt") ) }}</figcaption>
+  </figure>
+  {{ end }}
+</div>

@@ -1,0 +1,40 @@
+  {{ if eq .Type "page" }}
+    {{ partial "page_meta.html" . }}
+  {{ end }}
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 ">
+        <p class="credits copyright text-muted text-center">
+          {{ if .Site.Params.copyright }}
+            {{ .Site.Params.copyright  | safeHTML }}
+          {{ else }}
+            &copy;
+            {{ if .Site.Params.since }}
+              {{ .Site.Params.since }} - {{ .Site.LastChange.Format "2006" }}
+            {{ else }}
+              {{ .Site.LastChange.Format "2006" }}
+            {{ end }}
+            {{ if .Site.Title }}
+              &nbsp;&bull;&nbsp;
+              <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
+            {{ end }}
+          {{ end }}
+        </p>
+        <p class="text-muted text-center">
+          {{ i18n "footer_up" }}
+          <a href="#top"><i class="fas fa-arrow-alt-circle-up"></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ "js/jquery.min.js" | absURL }}"></script>
+<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
+<script src="{{ "js/main.js" | absURL }}"></script>
+{{- if  .Site.Params.useHLJS }}
+<script src="{{ "js/highlight.min.js" | absURL }}"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script>
+{{- end -}}

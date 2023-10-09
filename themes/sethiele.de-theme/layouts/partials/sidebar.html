@@ -1,0 +1,76 @@
+<aside class="sidebar sidebar-primary">
+
+  <!-- About me -->
+  <section class="widget widget_me">
+    <div class="card">
+      <div class="card-body text-center">
+        <p class="card-text">{{ i18n "sidebar_sebastian_short" | safeHTML }}</p>
+        {{ range .Site.Data.social.social_icons }}
+          {{- if isset $.Site.Author .id }}
+          <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}" class="card-link" target="_blank" rel="nofollow" >
+            <i class="{{ .icon }}"></i>
+          </a>
+          {{- end -}}
+        {{ end }}
+        {{ if .Site.Params.rss }}
+          <a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" title="RSS" class="card-link">
+            <i class="fas fa-rss"></i>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{- if and (gt .WordCount 400 ) (.Params.toc) (.IsPage) -}}
+  <section class="widget widget_toc">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-heading"></i> {{ i18n "toc" }}</h5>
+        {{.TableOfContents}}
+      </div>
+    </div>
+  </section>
+  {{- end -}}
+
+  <section class="widget widget_social">
+    <!-- Geekparents -->
+    <div class="card">
+      <a href="https://www.geekparents.de" target="_blank"><img src="/img/geekparents-spotify.jpg" class="card-img-top" alt="Geekparents bei Spotify"></a>
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-podcast"></i> {{ i18n "podcasts_geekparents_name" }}</h5>
+        <p class="card-text">{{ i18n "podcasts_geekparents_description_short" | safeHTML }}</p>
+        <a href="https://www.geekparents.de" target="_blank" class="card-link"><i class="fas fa-link"></i></a>
+        <a href="https://open.spotify.com/show/0eYOsIAx32ZMlkpz4gPLzJ" target="_blank" rel="nofollow" class="card-link"><i class="fab fa-spotify"></i></a>
+        <a href="https://podcasts.apple.com/de/podcast/geekparents/id1487526700" target="_blank" rel="nofollow" class="card-link"><i class="fab fa-itunes"></i></a>
+          <a href="https://geekparents.de/feed/mp3/" target="_blank" rel="nofollow" class="card-link"><i class="fas fa-rss-square" ></i></a>
+      </div>
+    </div>
+  </section> 
+
+  <!-- Tagcloud -->
+  <section class="panel panel-default">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-tags"></i> {{ i18n "tags" }}</h5>
+          {{ if not (eq (len $.Site.Taxonomies.tags) 0) }}
+              {{ $fontUnit := "rem" }}
+              {{ $largestFontSize := 2.0 }}
+              {{ $smallestFontSize := 0.7 }}
+              {{ $max := len (index $.Site.Taxonomies.tags.ByCount 0).Pages }}
+              {{ $min := len (index $.Site.Taxonomies.tags.ByCount.Reverse 0).Pages }}
+
+              <p class="card-text">
+                  {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
+                      {{ $count := len $taxonomy.Pages }}
+                      {{ $weigth := div (sub (math.Log $count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
+                      {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $weigth) ) }}
+                      <!--Current font size: {{$currentFontSize}}-->
+                      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" style="font-size:{{$currentFontSize}}{{$fontUnit}}">{{ $name }}</a>
+                  {{ end }}
+              </p>
+          {{ end }}
+          <a href="{{ "/tags/" | relLangURL }}" class="card-link"><i class="fas fa-tags"></i> {{ i18n "moreTags" }}</a>
+        </div>
+      </div>
+    </section>
+</aside>

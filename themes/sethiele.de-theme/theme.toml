@@ -1,0 +1,11 @@
+name = "sethiele.de Theme"
+license = "MIT"
+licenselink = "https://gitlab.com/sethiele/sethiele-de-theme/blob/master/LICENSE"
+description = "Special Theme for sethiele.de"
+tags = ["blog", "company", "portfolio", "projects", "minimal", "responsive", "seo", "google analytics", "bootstrap", "disqus", "light", "syntax highlighting", "multilingual", "portfolio", "projects", "mobile", "technical"]
+features = ["blog", "company", "portfolio", "projects", "minimal", "responsive", "seo", "google analytics", "bootstrap", "disqus", "light", "syntax highlighting", "multilingual", "portfolio", "projects", "mobile", "technical"]
+min_version = 0.60
+
+[author]
+    name = "Sebastian Thiele"
+    homepage = "http://sethiele.de"

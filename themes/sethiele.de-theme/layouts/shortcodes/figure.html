@@ -1,0 +1,26 @@
+{{ $width := ( .Get "width" ) | default 700 }}
+{{ $image_path := .Get "src" }}
+{{ $image_alt := ( .Get "alt") | default ( .Get "caption" ) }}
+{{ $images := .Page.Resources.Match $image_path }}
+{{ if or $images }}
+    {{ with $images }}
+      {{ $image := index (.) 0 }}
+      {{ $image := $image.Resize (print ( $width ) "x") }}
+      {{ $image_path = $image.RelPermalink }}
+    {{ end }}
+{{ end }}
+
+
+
+<figure class="figure {{ .Get "figure-class" }}" width="{{ $width }}px">
+  {{- if .Get "link" -}}
+  <a href="{{ .Get "link" }}" target="{{ .Get "target" }}" rel="{{ .Get "rel" }}">
+  {{- end -}}
+  <img src="{{ $image_path }}" alt="{{ $image_alt }}" class="ifigure-img img-fluid rounded" />
+  {{- if .Get "link" -}}
+  </a>
+  {{- end -}}
+  {{- if .Get "caption" -}}
+  <figcaption class="figure-caption {{ .Get "figcaption-class" }}">{{ .Get "caption" }}</figcaption>
+  {{- end -}}
+</figure>

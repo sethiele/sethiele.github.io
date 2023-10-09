@@ -1,0 +1,100 @@
+baseurl = "https://sethiele.de"
+enableRobotsTXT = true
+DefaultContentLanguage = "de"
+title = "Sebastian Thiele"
+theme = "sethiele.de-theme"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[Params]
+  homeTitle = "Blog von Sebastian Thiele" # Set a different text for the header on the home page
+  # subtitle = "Build a beautiful and simple website in minutes"
+  logo = "assets/img/sebastian_512.jpg" # Expecting square dimensions
+  favicon = "assets/img/icons/favicon.ico"
+  dateFormat = "2 January 2006"
+  commit = false
+  rss = true
+  rss_url = "/blog/index.xml"
+  comments = false
+  readingTime = true
+  wordCount = true
+  useHLJS = true
+  socialShare = true
+  delayDisqus = false
+  showRelatedPosts = true
+  copyright = "<a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\"><img alt=\"Creative Commons Lizenzvertrag\" style=\"border-width:0\" src=\"/img/cc-by-nc-sa-80x15.png\" /></a><br />Die Inhalte von <a xmlns:cc=\"http://creativecommons.org/ns#\" href=\"https://sethiele.de\" property=\"cc:attributionName\" rel=\"cc:attributionURL\">Sebastian Thiele</a> sind lizenziert unter einer <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative Commons by-nc-sa 4.0 International Lizenz</a>."
+
+[Author]
+  name = "Sebastian Thiele"
+  website = "https://sethiele.de"
+  #email = "youremail@domain.com"
+  #facebook = "username"
+  #googleplus = "+username" # or xxxxxxxxxxxxxxxxxxxxx
+  github = "sethiele"
+  gitlab = "sethiele"
+  #bitbucket = "username"
+  twitter = "sebat"
+  #reddit = "username"
+  linkedin = "sebastianthiele"
+  #xing = "username"
+  #stackoverflow = "users/XXXXXXX/username"
+  #snapchat = "username"
+  instagram = "sebat"
+  #youtube = "user/username" # or channel/channelname
+  #soundcloud = "username"
+  spotify = "sethiele"
+  #bandcamp = "username"
+  #itchio = "username"
+  #vk = "username"
+  #paypal = "username"
+  #telegram = "username"
+  #500px = "username"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "Über mich"
+    url = "sebastian"
+    weight = 2
+
+[[menu.main]]
+    parent = "Über mich"
+    name = "Profil"
+    url = "sebastian"
+    weight = 1
+
+[[menu.main]]
+    parent = "Über mich"
+    name = "Links"
+    url = "https://links.sethiele.de/"
+    weight = 2
+
+[[menu.main]]
+    identifier = "Rechtliches"
+    name = "Impressum/Datenschutz"
+    weight = 5
+
+[[menu.main]]
+    parent = "Rechtliches"
+    name = "Datenschutzerklärung"
+    url = "datenschutz"
+    weight = 1
+
+[[menu.main]]
+    parent = "Rechtliches"
+    name = "Impressum"
+    url = "impressum"
+    weight = 2
+
+[Permalinks]
+    blog = "/blog/:year/:month/:slug/"

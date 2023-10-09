@@ -1,0 +1,15 @@
+{{ define "main" }} {{ $data := .Data }}
+<article class="post-preview">
+  <p>Übersicht aller Tags auf dieser Seite.</p>
+  <div class="container text-end">
+    <div class="row">
+      {{ range $key, $value := .Data.Terms.ByCount }}
+      <div class="col-md-4">
+        <a href="{{ .Page.Permalink }}">{{ $value.Name }}</a>
+        <span class="badge bg-secondary">{{ $value.Count }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}
