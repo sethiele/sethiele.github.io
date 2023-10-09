@@ -2,7 +2,11 @@
 <div class="container" role="main">
   <div class="row">
     <div class="col-lg-23 col-md-12">
+      {{ if ne .Type "page" }}
+      {{ partial "post_meta.html" . }}
+      {{ end }}
       <article role="main" class="blog-post">
+
         {{ .Content }}
 
         {{ partial "post_tags.html" . }}
