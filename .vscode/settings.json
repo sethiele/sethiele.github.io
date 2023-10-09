@@ -4,6 +4,14 @@
     },
     "cSpell.language": ",de",
     "cSpell.words": [
-        "Assistant"
-    ]
+        "Assistant",
+        "bath",
+        "garden",
+        "kitchen",
+        "motion"
+    ],
+    "markdownlint.config": {
+        "default": true,
+        "MD034": false
+    }
 }
