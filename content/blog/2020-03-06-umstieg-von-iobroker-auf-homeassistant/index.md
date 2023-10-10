@@ -29,7 +29,7 @@ Was mich sofot begeistert hat, war die Einfachheit. Ganz besonders der einfache 
 
 Als ich etwas tiefer eingestiegen bin, kam aber das für mich absolute totschlag Argument dazu. Sämtliche Konfiguration können im [yaml-Format](https://de.wikipedia.org/wiki/YAML) geschrieben und damit auch versioniert werden. Damit lässt sich sämliche Konfiguration testen und wie jeder Code weiterentwickeln. Auch lassen sich automatisierte Konfigurations-Deployments entwickeln.
 
-Von den Unterstützen Geräten/Herstellern habe ich erst einmal keinen Unterschied gefunden. Allerdings sind einige Integrationen, wie eine direkte Unterstützung von [influxDB](/tags/grafana/) - und damit inidrekt [grafana](/tags/influxdb/), viel einfacher zu benutzen, dank einfacher Konfiguration in Files.
+Von den Unterstützen Geräten/Herstellern habe ich erst einmal keinen Unterschied gefunden. Allerdings sind einige Integrationen, wie eine direkte Unterstützung von [influxDB]({{< ref "/tags/influxdb" >}}) - und damit inidrekt [grafana]({{< ref "/tags/grafana" >}}), viel einfacher zu benutzen, dank einfacher Konfiguration in Files.
 
 ## iOS und Android App mit Geo-Daten lieferung
 

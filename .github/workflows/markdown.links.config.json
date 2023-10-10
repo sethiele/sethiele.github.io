@@ -1,7 +1,16 @@
 {
     "ignorePatterns": [
         {
-            "pattern": "^http://ignored-domain.com"
+            "pattern": "^https://twitter.com"
+        },
+        {
+            "pattern": "^https://www.thameslinkrailway.com"
+        }
+    ],
+    "replacementPatterns": [
+        {
+            "pattern": "^/",
+            "replacement": "{{BASEURL}}/"
         }
     ]
 }
