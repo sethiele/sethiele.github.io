@@ -36,7 +36,7 @@ Generell bin ich von der - im Vergleich zu den Berliner Verkehrsbetrieben - Fort
 
 Eigentlich wollten wir in das gleiche Hotel wie auch bei unserem ersten gemeinsamen Besuch in London, wir haben uns aber etwas in der Hausnummer geirrt und sind dafür im [Jurys Inn Croydon](https://www.jurysinns.com/hotels/london/croydon) gelandet - keine schlechte Alternative. In der City von London sind die Hotels, in denen man wohnen will, ziemlich teuer. Croydon ist da eine echte Alternative. Mit dem Zug ist man in etwa 20 Minuten in der Londoner City und zahlt dafür teilweise über die Hälfte weniger für eine Unterkunft (und Essen und Trinken).
 
-{{< tweet 1027271403882663936 >}}
+{{< tweet user="sebat" id="1027271403882663936" >}}
 
 Das Jurys Inn Croydon ist jetzt auch nicht das günstigste, bietet dafür allerdings auch alles was man erwartet. Im Verhältnis schnelles und kostenloses Internet, ruhige Zimmer und einiges mehr. Einzig das Fehlen eines Safes im Zimmer - man kann seine Sachen bei der Rezeption einschließen, muss dafür aber jedesmal jemanden bemühen - ist mir negativ aufgefallen. Das britische Frühstück kam ￡ 12,95 pro Person und war vollkommen OK - das Kind musste nichts bezahlen.
 

@@ -16,7 +16,7 @@ Es war ein schöner Sonntag morgen im Februar. Wir wollten mit dem Fahrrad zum t
 
 Als wir zu den Stellplätzen unserer Fahrräder kommen, war da nur noch eins da. Das meiner Frau. Dort, wo eigentlich mein Fahrrad sein sollte lag nur noch mein durchgeschnittenes Fahrradschloss.
 
-{{< tweet 569421448982499328 >}}
+{{< tweet user="sebat" id="569421448982499328" >}}
 
 Für mich war es das erste mal, dass mir ein Fahrrad geklaut wurde, darum war mir der ganze Ablauf neu. Dabei ist er (zumindest in Berlin) recht einfach.
 
