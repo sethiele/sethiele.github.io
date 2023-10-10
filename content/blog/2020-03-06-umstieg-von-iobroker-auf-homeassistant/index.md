@@ -5,7 +5,7 @@ date = 2020-03-06T00:00:01+01:00
 author = "Sebastian Thiele"
 slug = "home-assistant-iobroker-hausautomatisierung"
 categories = ["Maker"]
-tags = ["raspberry pi", "diy", "technik", "temperatur", "klima", "iot", "heimautomatisierung", "home assistant", "iobroker"]
+tags = ["raspberry pi", "diy", "technik", "temperatur", "klima", "iot", "heimautomatisierung", "home assistant", "iobroker", "grafana", "influxdb"]
 draft = false
 +++
 
