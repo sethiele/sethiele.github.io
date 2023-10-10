@@ -12,11 +12,11 @@ tags:
   - Wlan
 import: sebastian.thiele.me
 ---
-Ich hatte da mal wieder das Problem, das ich den CISO Client (4.8.01.0640) nicht installieren konnte. Da half auch nicht die Anleitung der Ubuntu Wiki (http://wiki.ubuntuusers.de/Cisco-VPN-Client)
+Ich hatte da mal wieder das Problem, das ich den CISO Client (4.8.01.0640) nicht installieren konnte. Da half auch nicht die Anleitung der [Ubuntu Wiki](https://wiki.ubuntuusers.de/Archiv/Cisco-VPN-Client/)
   
 Folgender Fehler trat auf:
 
-<pre>Making module
+```Making module
 make -C /lib/modules/2.6.24-19-generic/build SUBDIRS=/home/sebastian/
 Downloads/vpnclient modules
 make[1]: Betrete Verzeichnis '/usr/src/linux-headers-2.6.24-19-generic'
@@ -31,16 +31,16 @@ make[2]: *** [/home/sebastian/Downloads/vpnclient/linuxcniapi.o] Fehler 1
 make[1]: *** [_module_/home/sebastian/Downloads/vpnclient] Fehler 2
 make[1]: Verlasse Verzeichnis '/usr/src/linux-headers-2.6.24-19-generic'
 make: *** [default] Fehler 2
-Failed to make module "cisco_ipsec.ko".</pre>
+Failed to make module "cisco_ipsec.ko".```
 
 OK dann war da doch etwas bei der [Anleitung das half][1]:
   
 Es muss ein Patch installiert werden
 
-<pre>cd vpnclient
+```cd vpnclient
 wget http://projects.tuxx-home.at/ciscovpn/patches/vpnclient-linux-2.6.22.diff
 patch &lt; vpnclient-linux-2.6.22.diff
-sudo ./vpn_install</pre>
+sudo ./vpn_install```
 
 Danach ging alles wie nach Anleitung. Evtl kann das ja noch jemandem helfen.
 
@@ -52,4 +52,4 @@ Da mitlwerweile eine neue Kernalversion raus ist muss natürlich auch ein andere
 
 Ich habe es mit in meinen neuen Blog übernommen, da es sicher für viele Interessant ist. Darunter diverse Erstsemester (unteranderem an der TFH-Wildau, Humbold Universität zu Berlin, Universität Hanover, und einige mehr) die jetzt neu in den Campusnetzen herumschwirren wollen..
 
- [1]: http://wiki.ubuntuusers.de/Cisco-VPN-Client#Installation-unter-Ubuntu-Hardy-Heron
+ [1]: [https://wiki.ubuntuusers.de/Archiv/Cisco-VPN-Client](https://wiki.ubuntuusers.de/Archiv/Cisco-VPN-Client/#Installation-unter-Ubuntu-Hardy-Heron)

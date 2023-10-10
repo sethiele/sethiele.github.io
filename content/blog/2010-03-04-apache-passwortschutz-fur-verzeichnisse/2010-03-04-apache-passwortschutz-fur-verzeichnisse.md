@@ -19,20 +19,20 @@ Es ist ja super einfach eine relativ vernünftige Passwortabfrage für ein zu si
 
 Ich gehe im folgenden davon aus, dass euer www-root Verzeichnis im Verzeichnis _/var/www_ auf einem linuxrechner liegt un der Apache ordnungsgemäß installiert ist und arbeitet. Das zu schützende Verzeichnis soll in diesem Beispiel &#8220;save&#8221; heißen und liegt im www-root: _/var/www/save_
 
-**Schritt 1: Die Datei .htaccess wird angelegt**
+## Schritt 1: Die Datei .htaccess wird angelegt
 
 Im Verzeichnis &#8220;save&#8221; legt ihr mit eurem lieblings Editor die Datei mit namen .htaccess an. (Der Punkt am anfang bedeutet es ist eine versteckte Datei)
 
-<pre>nano .htaccess</pre>
+```nano .htaccess```
 
 In diese Datei schreibt ihr folgenden Inhalt:
 
-<pre>AuthType Basic
+```AuthType Basic
 AuthName "Administrationsbereich"
 AuthUserFile /var/www/save/.htpasswd
-require valid-user</pre>
+require valid-user```
 
-AuthType &#8211; gibt die Art der Anmeldung an. Basic ist dabei wirklich eine einfache Methode die <span style="color: #ff0000;">Usernamen und Passwort unverschlüsselt überträgt</span>.
+AuthType &#8211; gibt die Art der Anmeldung an. Basic ist dabei wirklich eine einfache Methode die *Usernamen und Passwort unverschlüsselt überträgt*.
   
 AuthName &#8211; Ist frei wählbar. Es Wird dem Benutzer angezeigt wenn er/sie versucht sich anzumelden.
   
@@ -40,15 +40,15 @@ AuthUserFile &#8211; Hier muss der Pfad eingetragen werden den die Datei hat, di
   
 require valid-user &#8211; sagt nur aus, dass sich nur ordentlich angemeldete (also bekannte) Benutzer rein dürfen.
 
-**Schritt 2: Anlegen der Passwortdatei**
+## Schritt 2: Anlegen der Passwortdatei
 
 Die Passwortdatei in diesem Beispiel soll .htpasswd heißen. Aber der Name und der Ort ist frei wählbar. Es wird dazu geraten die Passwortdatei nicht in einem Ordner unterhalt des www-root zu speichern. In den meisten Fällen reicht es aber wenn sie im gleichen Verzeichnis wie die .htaccess liegt. Zum erstmaligen erstellen einer Passwortdatei verwendet man den Parameter -c (Create) des Programmes htpasswd, welches mit einer Apacheinstallation mitgeliefert wird. (ab und an auch htpasswd2 genannt). Bei allen weiteren Usern, die eingetragen werden sollen reicht es einfach nur htpasswd aufzurufen.
 
-<pre>htpasswd -c /var/www/save/.htpasswd BENUTZER1</pre>
+`htpasswd -c /var/www/save/.htpasswd BENUTZER1`
 
 Im anschluss wird man nach einem Passwort gefragt und muss dieses wiederholen
 
-<pre>htpasswd /var/www/save/.htpasswd BENUTZER2</pre>
+`htpasswd /var/www/save/.htpasswd BENUTZER2`
 
 Wie beschrieben, wenn die passwortdatei schon da ist ohne -c. Schaut man sie die Datei nun mit einem Editor an, sieht man den Inhalt im Muster:
 
@@ -56,9 +56,9 @@ Benutzername:VerschlüsseltesPasswort
 
 Alles OK.
 
-**Schritt 3: Das wars ja schon**
+## Schritt 3: Das wars ja schon
 
-Jetzt sollte bei einem Aufruf des Ordners (http://server/save) Eine Passwortabfrage kommen.
+Jetzt sollte bei einem Aufruf des Ordners (`http://server/save``) Eine Passwortabfrage kommen.
 
 **Dinge die Probleme machen könnten**
 
@@ -72,8 +72,8 @@ Es sollte aber unbedingt daran gedacht werden, dass dies keine absolut sichere S
 
 Und wenn die passwort-Datei in einem webverzeichnis liegt sollte in diesem Verzeichnis auch eine .htaccess angelegt werden, in die folgendes Geschrieben werden sollt:
 
-<pre>&lt;Files .ht*&gt;
+```<Files .ht*>;
    deny from all
-&lt;/Files&gt;</pre>
+</Files>```
 
 Damit wird der Zugriff auf die Passwortdateien verboten.

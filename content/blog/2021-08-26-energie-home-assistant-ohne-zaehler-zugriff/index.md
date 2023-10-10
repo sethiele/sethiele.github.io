@@ -20,7 +20,7 @@ Wie ich bereits geschrieben habe, habe ich nicht die Möglichkeit direkt einen S
 
 ### TP-Link HS110
 
-Schon vor längerer Zeit habe ich einige der {{< werbelink link="https://amzn.to/3kldhlV" text="TP-Link HS100" >}} und {{< werbelink link="https://amzn.to/2XUhs0A" text="TP-Link HS110" >}} gekauft. Dies sind WIFI-Steckdosen die zunächst über die Kasa-App des Anbieters mit deren Cloud verbunden werden müssen. Die HS110 sind die Modelle, die auch den Stromverbrauch messen und speichern können. Dabei gibt es einen Täglichen- und einen Gesamtverbrauch in KWh Sensor pro Gerät. Aber auch der aktuelle Verbrauch in W werden angegeben. In Zukunft werde ich mich aber von diesen Geräten trennen.
+Schon vor längerer Zeit habe ich einige der {{< werbelink link="<https://amzn.to/3kldhlV>" text="TP-Link HS100" >}} und {{< werbelink link="<https://amzn.to/2XUhs0A>" text="TP-Link HS110" >}} gekauft. Dies sind WIFI-Steckdosen die zunächst über die Kasa-App des Anbieters mit deren Cloud verbunden werden müssen. Die HS110 sind die Modelle, die auch den Stromverbrauch messen und speichern können. Dabei gibt es einen Täglichen- und einen Gesamtverbrauch in KWh Sensor pro Gerät. Aber auch der aktuelle Verbrauch in W werden angegeben. In Zukunft werde ich mich aber von diesen Geräten trennen.
 
 #### Vorteile der TP-Link HS110
 
@@ -35,7 +35,7 @@ Schon vor längerer Zeit habe ich einige der {{< werbelink link="https://amzn.to
 
 ### Xiaomi ZNCZ04LM (Zigbee)
 
-Ich bin großer Fan von Xiaomi also wollte ich auch diese Steckdosen mal ausprobieren. Die {{< werbelink text="Xiaomi ZNCZ04LM" link="https://amzn.to/2UOKbTq" >}} Steckdosen sind [zigbee2mqtt kompatibel](https://www.zigbee2mqtt.io/devices/ZNCZ04LM.html) und daher sehr einfach einzubinden. Sie bieten Werte für den aktuellen Verbrauch in W als auch den gesamten Verbrauch in KWh.
+Ich bin großer Fan von Xiaomi also wollte ich auch diese Steckdosen mal ausprobieren. Die {{< werbelink text="Xiaomi ZNCZ04LM" link="<https://amzn.to/2UOKbTq>" >}} Steckdosen sind [zigbee2mqtt kompatibel](https://www.zigbee2mqtt.io/devices/ZNCZ04LM.html) und daher sehr einfach einzubinden. Sie bieten Werte für den aktuellen Verbrauch in W als auch den gesamten Verbrauch in KWh.
 
 #### Vorteile der Xiaomi ZNCZ04LM
 
@@ -51,7 +51,7 @@ Ich bin großer Fan von Xiaomi also wollte ich auch diese Steckdosen mal ausprob
 
 ### Shelly Plug und Shelly Plug S
 
-Beide Versionen der Shelly Stecker sind WIFI-Steckdosen. Sie liefern wie die anderen den Verbrauch in KWh als auch die aktuellen W. Der Unterschied ist, dass die {{< werbelink text="Shelly Plug S" link="https://amzn.to/2UNbUns" >}} "nur" 2500W (10A) vertragen und die {{< werbelink text="Shelly Plug" link="https://amzn.to/3y8gudu" >}} 3500W (16A) vertragen.
+Beide Versionen der Shelly Stecker sind WIFI-Steckdosen. Sie liefern wie die anderen den Verbrauch in KWh als auch die aktuellen W. Der Unterschied ist, dass die {{< werbelink text="Shelly Plug S" link="<https://amzn.to/48PueNJ>" >}} "nur" 2500W (10A) vertragen und die {{< werbelink text="Shelly Plug" link="<https://amzn.to/3y8gudu>" >}} 3500W (16A) vertragen.
 
 #### Vorteile der Shelly Plugs
 
