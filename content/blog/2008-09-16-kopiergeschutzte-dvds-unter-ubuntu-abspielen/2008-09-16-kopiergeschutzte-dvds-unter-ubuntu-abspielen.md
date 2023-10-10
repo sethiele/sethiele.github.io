@@ -18,7 +18,7 @@ Hilfreich dabei ist das Paket (und die Abhängigkeiten dazu) mit den Namen **lib
   
 **libdvdcss2** wird nicht standart mäßig mit installiert, da es ein non-free Paket ist, welches aber jederzeit nachinstalliert werden kann. Da ich auf `www.apt-get.org` keine Quelle für **hardy** gefunden habe musste ich zu Fuß auf die suche gehen. Auf der Webseite [http://medibuntu.org](http://medibuntu.org/) gibt es das gewünschte Paket als .deb Datei die (für die Umsteiger freudig zu hören) man wie von Windows gewohnt per doppelklick installieren kann.
 
-Die vollständige Adresse für das hardy Paket findet man hier: [http://packages.medibuntu.org/hardy/libdvdcss2.html](http://packages.medibuntu.org/hardy/libdvdcss2.html)
+Die vollständige Adresse für das hardy Paket findet man hier: `http://packages.medibuntu.org/hardy/libdvdcss2.html`.
 
 Nach dem Download des euch entsprechenden .deb Paketes kann das Paket (wie beschrieben) durch doppelklick installiert werden. Wie gewohnt werden alle Abhängigkeiten mit installiert. Alternativ dazu der wiki Eintrag von [ubuntuusers.de](http://wiki.ubuntuusers.de/Paketinstallation_DEB)
 
