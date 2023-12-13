@@ -7,7 +7,7 @@ slug = "beginnen-mit-hausautomatisierung"
 categories = ["Maker"]
 tags = ["diy", "Technik", "iot", "heimautomatisierung", "home assistant", "sensoren"]
 toc = true
-draft = true
+draft = false
 +++
 
 Das Thema Hausautomatisierung beginnt meistens sehr klein, eine Empfehlung eines [Freundes](https://www.tim-schiemann.de/blog/2023/12/08/home-assistant.html), ein cooles YouTube Video, ein Besuch bei jemanden der/die es bereits eine weile betreibt und schon ist die Idee geboren "Ich will das auch". Und dank Systeme wie [Home Assistant](https://home-assistant.io) (mein bevorzugtes System) ist der Einstieg auch unglaublich einfach. Ein {{< werbelink link="https://amzn.to/46GY06f" text="Raspberry Pi" >}} mit dem bereitgestellten Image bespielen, Strom rein und (fast) fertig.
