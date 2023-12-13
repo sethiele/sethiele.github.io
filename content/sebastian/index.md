@@ -12,7 +12,7 @@ Mein Name ist Sebastian, ich bin Baujahr 1985 und gebohren und aufgewachsen in B
 
 Nach einer Ausbildung zum _staatlich geprüften Assistenten für Elektronik und Datentechnik_ habe ich noch ein Studium zum _Diplom Wirtschaftsinformatiger (FH)_ hinterher geschoben. Meine Diplomarbeit zum Thema _Suchmaschinenoptimierung einer auf Microsoft Silverlight basierenden Webanwendung_ war ein voller Erfolg.
 
-Ich schreibe schon einige Jahre in diversen Blogs, die ich über kurz oder lang aber meistens wieder einstampfe. Einige Inhalte von diesen alten Seiten habe ich hier zusammengetragen. Seit kurzen versuche ich mich daran das Medium _Podcast_ zu erobern. Zusammen mit meinen Freunden und EX- Kollegen [Tim Schiemann](https://www.tim-schiemann.de) & Nico sprechen wir in dem Podcast [Geekparents](https://geekparents.de) über alles was uns in dem Bereich Eltern und Technik einfällt.
+Ich schreibe schon einige Jahre in diversen Blogs, die ich über kurz oder lang aber meistens wieder einstampfe. Einige Inhalte von diesen alten Seiten habe ich hier zusammengetragen. Seit kurzen versuche ich mich daran das Medium _Podcast_ zu erobern. Zusammen mit meinen Freunden und EX- Kollegen [Tim Schiemann](https://www.tim-schiemann.de) & Nico sprechen wir in dem Podcast [Geekparents](https://www.geekparents.de) über alles was uns in dem Bereich Eltern und Technik einfällt.
 
 Ansonsten bin ich begeistert von Thema [Heimautomatisierung]({{< ref "tags/heimautomatisierung" >}}). Ich [Reise]({{< ref "tags/reisen" >}}) sehr gerne und schaue mir die Welt an.
 
