@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+  <div class="card">
+    <div class="card-body">
+      <p class="card-text">{{ .Content }}</p>
+    </div>
+  </div>
+
+  {{ range $key, $value := $.Site.Data.printables }}
+    <h2 id="{{ $key }}">
+      <small class="text-body-secondary">Anbieter</small>
+      {{ $key }}
+    </h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      {{ range $value }}
+      <div class="col">
+      <div class="card  h-100">
+        {{ if .image }}
+        <img src="{{ .image }}" class="card-img-top" alt="{{ .name }}">
+        {{ else }}
+        <img src="no_image.jpg" class="card-img-top" alt="{{ .name }}">
+        {{ end }}
+        <div class="card-body">
+          <h5 class="card-title">{{ .name }}</h5>
+          <p class="card-text">{{ .description | markdownify}}</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary"><a href="{{ .link }}" target="_blank">zum Model</a></small>
+        </div>
+      </div>
+      </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
+{{ end }}

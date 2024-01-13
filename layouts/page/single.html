@@ -1,0 +1,92 @@
+{{ define "main" }}
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-23 col-md-12">
+      {{ if ne .Type "page" }}
+      {{ partial "post_meta.html" . }}
+      {{ end }}
+      <article role="main" class="blog-post">
+
+        {{ .Content }}
+
+        {{ partial "post_tags.html" . }}
+
+        {{ if $.Param "socialShare" }}
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                {{ partial "share-links" . }}
+              </div>
+            </section>
+        {{ end }}
+
+        {{ if .Site.Params.showRelatedPosts }}
+          {{ range first 1 (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+            {{ $.Scratch.Set "has_related" true }}
+          {{ end }}
+
+          {{ if $.Scratch.Get "has_related" }}
+                  <h4 class="see-also">{{ i18n "seeAlso" }}</h4>
+                  <div class="list-group">
+                    {{ $num_to_show := .Site.Params.related_content_limit | default 5 }}
+                    {{ range first $num_to_show (where (where .Site.Pages ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+                      <a href="{{ .RelPermalink }}" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">{{ .Title }}</h5>
+                          <small class="text-muted">{{ .PublishDate.Format (i18n "dateFormat") }}</small>
+                        </div>
+                      </a>
+                    {{ end }}
+                  </div>
+
+          {{ end }}
+        {{ end }}
+      </article>
+
+      {{ if ne .Type "page" }}
+        <ul class="pager pagination pagination-lg justify-content-center">
+          {{ if .PrevInSection }}
+            <li class="page-item previous">
+              <a class="page-link" href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; {{ i18n "previousPost" }}</a>
+            </li>
+          {{ end }}
+          {{ if .NextInSection }}
+            <li class="page-item next">
+              <a class="page-link" href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">{{ i18n "nextPost" }} &rarr;</a>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+
+
+      {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (and .Site.Params.comments (ne .Type "page"))) }}
+        {{ if .Site.DisqusShortname }}
+          {{ if .Site.Params.delayDisqus }}
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">{{ i18n "show" }} <span class="disqus-comment-count" data-disqus-url="{{ trim .Permalink "/" }}">{{ i18n "comments" }}</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = '{{ trim .Permalink "/" }}';
+            };
+
+          </script>
+          </div>
+          {{ else }}
+          <div class="disqus-comments">
+            {{ template "_internal/disqus.html" . }}
+          </div>
+          {{ end }}
+        {{ end }}
+        {{ if .Site.Params.staticman }}
+          <div class="staticman-comments">
+            {{ partial "staticman-comments.html" . }}
+          </div>
+        {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+</div>
+{{ end }}
